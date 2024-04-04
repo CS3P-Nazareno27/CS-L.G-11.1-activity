@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CS activity</title>
+    <style>
+        body {
+            background-color: rgba(215, 131, 209, 0.851);
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+        }
+        .bd {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.504);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+        }
+        .bd p {
+            display: inline-block;
+            width: 200px;
+            margin: 0;
+        }
+        input {
+            width: 270px;
+            padding: 10px;
+            margin: 8px;
+            border: 1px solid white;
+            border-radius: 20px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #reset {
+            background-color: red;
+        }
+        #reset:hover {
+            background-color: rgba(255, 0, 0, 0.789);
+        }
+        #cpassword {
+            color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <center><h1> SIGN UP </h1></center>
+    <div class="bd">    
+        <p>Name:</p>
+        <input id="name">
+        
+        <p>Username:</p>
+        <input id="username">
+        
+        <p>Password:</p>
+        <input type="password" id="password">
+        
+        <p id="cpassword">Confirm Password:</p>
+        <input type="password" id="cpasswordd">
+        
+        <p>Email:</p>
+        <input type="email" id="email">
+        
+        <p>Address:</p>
+        <input id="address">
+        
+        <p>Interests:</p>
+        <input id="interests" style="height: 100px;">
+        
+        <button type="submit" onclick="walang()">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+    </div>
+    <script>
+        function walang() {
+            window.alert("Thank you!")
+        }
+    </script>
+</body>
+</html>
